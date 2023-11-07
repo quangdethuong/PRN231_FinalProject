@@ -1,0 +1,254 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) GatewaySolution",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildGatewaySolution",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.GatewaySolution/bin/Debug/net7.0/Project.GatewaySolution.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.GatewaySolution",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) AuthAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildAuthAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.AuthAPI/bin/Debug/net7.0/Project.Services.AuthAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.AuthAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) CouponAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildCouponAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.CouponAPI/bin/Debug/net7.0/Project.Services.CouponAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.CouponAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) EmailAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildEmailAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.EmailAPI/bin/Debug/net7.0/Project.Services.EmailAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.EmailAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) OrderAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildOrderAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.OrderAPI/bin/Debug/net7.0/Project.Services.OrderAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.OrderAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) ProductAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildProductAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.ProductAPI/bin/Debug/net7.0/Project.Services.ProductAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.ProductAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) RewardAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildRewardAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.RewardAPI/bin/Debug/net7.0/Project.Services.RewardAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.RewardAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) ShoppingCartAPI",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildShoppingCartAPI",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Services.ShoppingCartAPI/bin/Debug/net7.0/Project.Services.ShoppingCartAPI.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Services.ShoppingCartAPI",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
+            "name": ".NET Core Launch (web) Web",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "buildWeb",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/Project.Web/bin/Debug/net7.0/Project.Web.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Project.Web",
+            "stopAtEntry": false,
+            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        }
+    ],
+    "compounds": [
+        {
+          "name": "All",
+          "configurations": [
+            ".NET Core Launch (web) AuthAPI",
+            ".NET Core Launch (web) CouponAPI",
+            ".NET Core Launch (web) EmailAPI",
+            ".NET Core Launch (web) OrderAPI",
+            ".NET Core Launch (web) ProductAPI",
+            ".NET Core Launch (web) RewardAPI",
+            ".NET Core Launch (web) ShoppingCartAPI",
+            ".NET Core Launch (web) GatewaySolution",
+            ".NET Core Launch (web) Web"
+          ],
+          "stopAll": true
+        }
+      ]
+}
