@@ -94,6 +94,9 @@ namespace Project.Web.Controllers
             if (response != null && response.IsSucess)
             {
                 ProductDto? model = JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(response.Result));
+     
+
+
                 return View(model);
             }
             else
@@ -103,22 +106,7 @@ namespace Project.Web.Controllers
             return NotFound();
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> ProductEdit(ProductDto productDto)
-        //{
-        //    ResponseDto? response = await _productService.UpdateProductsAsync(productDto);
 
-        //    if (response != null && response.IsSucess)
-        //    {
-        //        TempData["success"] = "Product updated successfully";
-        //        return RedirectToAction(nameof(ProductIndex));
-        //    }
-        //    else
-        //    {
-        //        TempData["error"] = response?.Message;
-        //    }
-        //    return View(productDto);
-        //}
         [HttpPost]
         public async Task<IActionResult> ProductEdit(ProductDto productDto)
         {

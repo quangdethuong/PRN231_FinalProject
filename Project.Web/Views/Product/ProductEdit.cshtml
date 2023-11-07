@@ -1,6 +1,19 @@
 ﻿ @model ProductDto
 @{
     var baseUrl = "https://localhost:7000/";
+    string fileName = "";
+    if (Model.ImageUrl == null)
+    {
+        <p>Error</p>
+    }
+    else
+    {
+        int lastIndex = Model.ImageUrl.LastIndexOf('/');
+        if (lastIndex > 0)
+        {
+            fileName = Model.ImageUrl.Substring(lastIndex + 1);
+        }
+    }
 
 }
 <form asp-action="ProductEdit" enctype="multipart/form-data">
@@ -41,13 +54,20 @@
                         <span asp-validation-for="Price" class="text-danger"></span>
                     </div>
                     <div class="col-2">
-                        <label class="control-label pt-2" style="font-size:20px;">ImageUrl</label>
+                        <label class="control-label pt-2" style="font-size:20px;">New Image</label>
                     </div>
                     <div class="col-10 pb-3">
                         <input asp-for="Image" class="form-control" />
-                       @* <input asp-for="ImageUrl" hidden class="form-control" />
-                        <input asp-for="ImageLocalPath" hidden class="form-control" />*@
+                   @*     <input type="file" asp-for="ImageUrl"  class="form-control" />
+                        <input asp-for="ImageLocalPath"  class="form-control" />*@
                         <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <div class="col-2">
+                        <label class="control-label pt-2" style="font-size:20px;">Old Image: </label>
+                    </div>
+                    <div class="col-10 pb-3">
+                        <input asp-for="@fileName" disabled class="form-control" />
+                 
                     </div>
 
                     <div class="col-5 offset-2">
